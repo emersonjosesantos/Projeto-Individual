@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="validarSessao(), atualizarFeed()">
+<body ><!--onload="validarSessao(), atualizarFeed()"-->
 
     <div class="janela">
         <div class="header-left">
@@ -59,16 +59,21 @@
 
         <div class="dash">
             <div class="btns-dash">
-                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  -->
+                <h2>Quem desses é o mais forte na sua opinião?</h2>
+                    <input id="shazam" type="checkbox" class="pesq">
+                    <input id="superman" type="checkbox" class="pesq">
+                    <input id="m_marav" type="checkbox" class="pesq">
+                
+                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  
                 <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(3)">Aquario 3</button>
-                <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button>
+                <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button-->
             </div>
             <div>
-                <h3 class="tituloGraficos">
+                <!--h3 class="tituloGraficos">
                     <span id="tituloAquario">123</span>
-                </h3>
+                </h3-->
             </div>
             <div class="graph">
                 <canvas id="canvas_grafico"></canvas>
@@ -91,10 +96,10 @@
 
     verificar_autenticacao();
 
-    function alterarTitulo(idAquario) {
+    /*function alterarTitulo(idAquario) {
         var tituloAquario = document.getElementById("tituloAquario")
         tituloAquario.innerHTML = "Últimas medidas de Temperatura e Umidade do <span style='color: #e6005a'>Aquário " + idAquario + "</span>"
-    }
+    }*/
 
     // O gráfico é construído com três funções:
     // 1. obterDadosGrafico -> Traz dados do Banco de Dados para montar o gráfico da primeira vez
