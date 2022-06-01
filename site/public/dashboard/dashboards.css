@@ -8,7 +8,7 @@ body {
 .dash-right .avisos {
   width: 100%;
   /* border: 3px solid pink; */
-  color: rgb(216, 216, 216);
+  color: black;
   font-family: "Exo 2", sans-serif;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .dash-right .avisos .div-form input {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .dash-right .avisos .div-form textarea {
@@ -106,15 +106,16 @@ body {
 /* pagina graficos */
 
 .dash-header {
-  background-color: #ffff;
+  background-color: #000000;
 }
 
 .dash {
+  text-align: center;
   width: 75%;
   position: relative;
   top: 0;
   left: 25%;
-  background-color: #161618;
+  background-color: #ffffff;
 
   /* width: 75%;
     display: flex;
@@ -218,7 +219,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 2%;
+  gap: 5%;
 }
 
 .graph {
@@ -243,4 +245,20 @@ body {
   background-color: white;
   margin: 5px;
   border-radius: 3px;
+}
+
+.img-quiz{
+  padding: 10px 10px;
+  display: flex;
+  width: 50%;
+  height: 50%;
+}
+
+.pesq{
+  display: flex;
+  margin-top: 10%;
+  border-radius: 4px;
+  background-color: #000000;
+  height: 20px;
+  color: #ffffff;
 }
