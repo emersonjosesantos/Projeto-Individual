@@ -80,7 +80,7 @@ body {
   padding: 20px;
 }
 
-.publicacao > *:not(:last-child) {
+.publicacao>*:not(:last-child) {
   padding: 0 0 10px 0;
 }
 
@@ -99,7 +99,7 @@ body {
   justify-content: flex-end;
 }
 
-.div-buttons > * {
+.div-buttons>* {
   margin-left: 30px;
 }
 
@@ -110,6 +110,7 @@ body {
 }
 
 .dash {
+  align-items: center;
   text-align: center;
   width: 75%;
   position: relative;
@@ -216,11 +217,14 @@ body {
 }
 
 .btns-dash {
+  position: absolute;
+   left: 200px;
+   bottom: 204px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 2%;
-  gap: 5%;
+  gap: 43%;
 }
 
 .graph {
@@ -247,18 +251,26 @@ body {
   border-radius: 3px;
 }
 
-.img-quiz{
+.img-quiz {
+  float: left;
+  margin-left: 55px;
   padding: 10px 10px;
   display: flex;
-  width: 50%;
-  height: 50%;
+  width: 250px;
+  height: 300px;
 }
 
-.pesq{
+.pesq {
+  white-space: nowrap;
+  align-items: center;
+  /*position: absolute;
+   left: 800px;
+   bottom: 4px;
+  margin-right: 90px;*/
   display: flex;
-  margin-top: 10%;
+  width: 200px;
   border-radius: 4px;
   background-color: #000000;
-  height: 20px;
+  height: 30px;
   color: #ffffff;
 }
