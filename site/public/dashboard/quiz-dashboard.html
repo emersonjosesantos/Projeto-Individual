@@ -23,7 +23,7 @@
 
 </head>
 
-<body ><!--onload="validarSessao(), atualizarFeed()"-->
+<body onload="validarSessao(), atualizarFeed()">
 
     <div class="janela">
         <div class="header-left">
@@ -33,11 +33,11 @@
                 <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
             </div>
 
-            <div class="btn-nav-white">
+            <!--div class="btn-nav-white">
                 <a href="./cards.html">
                     <h3>#</h3>
                 </a>
-            </div>
+            </div-->
 
             <div class="btn-nav">
 
@@ -58,14 +58,17 @@
         </div>
 
         <div class="dash">
-            <h2>Quem desses é o mais forte na sua opinião?</h2>
-            <img src="../assets/imgs/shazam-p.jpg" alt="" class="img-quiz">
-            <img src="../assets/imgs/aultima.jpg" alt="" class="img-quiz">
-            <img src="../assets/imgs/marte-marte.jpg" alt="" class="img-quiz"> 
+            <div class="img-dash">
+                <h2>Quem desses é o mais forte na sua opinião?</h2>
+                <img src="../assets/imgs/shazam-p.jpg" alt="" class="img-quiz">
+                <img src="../assets/imgs/tho2.jpg" alt="" class="img-quiz">
+                <img src="../assets/imgs/marte-marte.jpg" alt="" class="img-quiz"> 
+            </div>
+          
             <div class="btns-dash">
                                    
                     <button id="shazam" onclick="" class="pesq">Shazam</button>
-                  <button id="superman" onclick="" class="pesq">Super Man</button>
+                  <button id="superman" onclick="" class="pesq">Thor</button>
                    <button id="m_marav" onclick="" class="pesq">Caçador Marciano</button> 
               
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  
@@ -172,7 +175,7 @@
             var registro = resposta[i];
             dados.labels.push(registro.momento_grafico);
             dados.datasets[0].data.push(registro.umidade);
-            dados.datasets[1].data.push(registro.temperatura);
+            // dados.datasets[1].data.push(registro.temperatura);*/
         }
 
         console.log(JSON.stringify(dados));
@@ -228,7 +231,7 @@
 
     //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
     //     Para ajustar o "select", ajuste o comando sql em src/models
-    function atualizarGrafico(idAquario, dados) {
+    /*function atualizarGrafico(idAquario, dados) {
 
         fetch(`/medidas/tempo-real/${idAquario}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
@@ -262,5 +265,5 @@
                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
             });
 
-    }
+    }*/
 </script>

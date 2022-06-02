@@ -77,8 +77,14 @@
                     <span class="tipo_campo">Confirmação da Senha:</span>
                     <input id="confirmacao_senha_input" type="password" placeholder="******">
 
-                    <span class="tipo_campo">Responde essa:</span>
-                    <input id="question_input" type="" placeholder="Strange bar ganhou com?">
+                    <span class="tipo_campo">Na sua opinião</span>
+                    <select  id="question_sel" class="sel_campo">
+                        <option value="#">Quem é o mais forte?</option>
+                        <option value="1">Shazam</option>
+                        <option value="2">Thor</option>
+                        <option value="3">Caçador de Marte</option>
+                        <option value="4">Hulk</option>
+                    </select>   
 
                     <button class="btn" onclick="cadastrar()">Cadastrar</button>
 
@@ -122,7 +128,7 @@
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
-        var questionVar = question_input.value;
+        var questionVar = question_sel.value;
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || questionVar == "") {
             cardErro.style.display = "block"

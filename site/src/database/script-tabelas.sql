@@ -12,6 +12,8 @@ CREATE TABLE usuario (
 	email VARCHAR(50),
 	senha VARCHAR(50),
 	question VARCHAR(50)
+	fk_personagem INT,
+	FOREIGN KEY (fk_personagem) REFERENCES personagem(id)
 );
 
 CREATE TABLE aviso (
@@ -21,6 +23,20 @@ CREATE TABLE aviso (
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 );
+
+CREATE TABLE personagem (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(50)
+	);
+
+	select * from usuario;
+    select * from personagem;
+    
+    insert into personagem(nome) values
+    ('Shazam'),
+    ('Thor'),
+    ('Caçador de Marte'),
+    ('Hulk');
 
 create table aquario (
 /* em nossa regra de negócio, um aquario tem apenas um sensor */
