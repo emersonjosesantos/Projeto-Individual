@@ -23,8 +23,7 @@
 
 </head>
 
-<body>
-    <!--onload="validarSessao(), atualizarFeed()"-->
+<body onload="validarSessao(), atualizarFeed()">
 
     <div class="janela">
         <div class="header-left">
@@ -105,7 +104,6 @@
         </div>
     </div>
 
-
 </body>
 
 </html>
@@ -118,7 +116,7 @@
 
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
-    verificar_autenticacao();
+    // verificar_autenticacao();
 
     /*function alterarTitulo(idAquario) {
         var tituloAquario = document.getElementById("tituloAquario")
@@ -137,7 +135,7 @@
     //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
     //     Para ajustar o "select", ajuste o comando sql em src/models
     function obterDadosGrafico(idAquario) {
-        alterarTitulo(idAquario)
+        // alterarTitulo(idAquario)
 
         if (proximaAtualizacao != undefined) {
             clearTimeout(proximaAtualizacao);
@@ -163,7 +161,7 @@
     // Esta função *plotarGrafico* usa os dados capturados na função anterior para criar o gráfico
     // Configura o gráfico (cores, tipo, etc), materializa-o na página e, 
     // A função *plotarGrafico* também invoca a função *atualizarGrafico*
-    function plotarGrafico(resposta, idAquario) {
+    function plotarGrafico(resposta, fk_personagem) {
         console.log('iniciando plotagem do gráfico...');
 
         var dados = {
@@ -171,7 +169,7 @@
             datasets: [
                 {
                     yAxisID: 'y-umidade',
-                    label: 'Umidade',
+                    label: 'Personagem',
                     borderColor: '#32B9CD',
                     backgroundColor: '#32b9cd8f',
                     fill: true,
@@ -179,7 +177,7 @@
                 },
                 {
                     yAxisID: 'y-temperatura',
-                    label: 'Temperatura',
+                    label: 'Temperatur',
                     borderColor: '#FFF',
                     backgroundColor: '#32b9cd8f',
                     fill: true,
@@ -190,15 +188,15 @@
 
         for (i = 0; i < resposta.length; i++) {
             var registro = resposta[i];
-            dados.labels.push(registro.momento_grafico);
-            dados.datasets[0].data.push(registro.umidade);
+            dados.labels.push(registro.nomepersonagem);
+            dados.datasets[0].data.push(registro.Qtd_Pessoas);
             // dados.datasets[1].data.push(registro.temperatura);*/
         }
 
         console.log(JSON.stringify(dados));
 
         var ctx = canvas_grafico.getContext('2d');
-        window.grafico_linha = Chart.Line(ctx, {
+        window.grafico_linha = Chart.Bar(ctx, {
             data: dados,
             options: {
                 responsive: true,
