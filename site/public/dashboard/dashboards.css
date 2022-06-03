@@ -239,6 +239,13 @@ body {
   height: 300px;
 }
 
+.quiz_campo{
+  width: 400px;
+background-color: #000000;
+border-radius: 4px;
+color: #ffffff;
+}
+
 .pesq {
   white-space: nowrap;
   align-items: center;

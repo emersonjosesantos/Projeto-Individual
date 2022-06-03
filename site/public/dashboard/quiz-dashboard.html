@@ -23,7 +23,8 @@
 
 </head>
 
-<body onload="validarSessao(), atualizarFeed()">
+<body>
+    <!--onload="validarSessao(), atualizarFeed()"-->
 
     <div class="janela">
         <div class="header-left">
@@ -59,24 +60,40 @@
 
         <div class="dash">
             <div class="img-dash">
-                <h2>Quem desses é o mais forte na sua opinião?</h2>
-                <img src="../assets/imgs/shazam-p.jpg" alt="" class="img-quiz">
+                <h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
+
+                <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
+                    <option value="superman">SUPERMAN</option>
+                    <option value="shazam">SHAZAM</option>
+                    <option value="capitao_america">CAPITÃO AMÉRICA</option>
+                </select><br>
+                <div id="teste"></div>
+                <h3>RANK DE HEROIS</h3>
+                <input type="text" id="in_heroi" class="quiz_campo"><br><br>
+                <button onclick="registrar()">Montar Pódio</button><br><br>
+                <button onclick="mostrar()">Classificação</button> <br><br>
+
+                <div id="resultado"></div>
+                <!--img src="../assets/imgs/shazam-p.jpg" alt="" class="img-quiz">
                 <img src="../assets/imgs/tho2.jpg" alt="" class="img-quiz">
-                <img src="../assets/imgs/marte-marte.jpg" alt="" class="img-quiz"> 
+                <img src="../assets/imgs/marte-marte.jpg" alt="" class="img-quiz"-->
             </div>
-          
-            <div class="btns-dash">
-                                   
-                    <button id="shazam" onclick="" class="pesq">Shazam</button>
-                  <button id="superman" onclick="" class="pesq">Thor</button>
-                   <button id="m_marav" onclick="" class="pesq">Caçador Marciano</button> 
-              
+
+            <!-- <div class="btns-dash"> -->
+
+                <!--input placeholder="Sua Resposta" id="in_shazam">
+                <button onclick="resposta()" class="pesq">Ver</button>
+                <button id="superman" onclick="" class="pesq">Thor</button>
+                <button id="m_marav" onclick="" class="pesq">Caçador Marciano</button-->
+
+                
+
                 <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  
                 <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(3)">Aquario 3</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button-->
-            </div>
+            <!-- </div> -->
             <div>
                 <!--h3 class="tituloGraficos">
                     <span id="tituloAquario">123</span>
@@ -266,4 +283,33 @@
             });
 
     }*/
+
+   
+</script>
+<script>
+     var heroi = []
+    function resposta() {
+        var resposta = sel_heroi.value
+        if (resposta == 'shazam') {
+            teste.innerHTML = `
+            Resposta Correta <br>
+            <img src="../assets/imgs/shazam.jpg" style="width:150px"/>`
+        } else {
+            teste.innerHTML = `Resposta Incorreta<br> 
+            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        }
+    }
+
+    function registrar() {
+        heroi.push(in_heroi.value)
+    }
+
+    function mostrar() {
+        var posicao = 1
+        for (contador = 0; contador < heroi.length; contador++) {
+            resultado.innerHTML += `
+            Em ${posicao}º lugar <b style="black: gold;">${heroi[contador]}</b> <br><br>`
+            posicao++
+        }
+    }
 </script>
