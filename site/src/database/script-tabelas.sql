@@ -11,7 +11,7 @@ CREATE TABLE usuario (
 	nome VARCHAR(50),
 	email VARCHAR(50),
 	senha VARCHAR(50),
-	question VARCHAR(50)
+	question VARCHAR(50),
 	fk_personagem INT,
 	FOREIGN KEY (fk_personagem) REFERENCES personagem(id)
 );
