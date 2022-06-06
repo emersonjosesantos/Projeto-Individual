@@ -67,7 +67,7 @@
                     <option value="shazam">Shazam</option>
                     <option value="capitao_america">Capitão América</option>
                 </select><br>
-                <div id="teste"></div>
+                <div id="resposta"></div>
 
                 <h2>Qual desses velocistas possuí o maior feito de velocidade?</h2>
 
@@ -77,32 +77,54 @@
                     <option value="2">Wally West</option>
                     <option value="3">Jay Garrick</option>
                 </select><br>
-                <div id="teste2"></div>
+                <div id="resposta_2"></div>
 
-                <!--h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
+                <h2>Primeiro Laterna Verde Canônico da Terra.</h2>
 
-                <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
-                    <option value="superman">SUPERMAN</option>
-                    <option value="shazam">SHAZAM</option>
-                    <option value="capitao_america">CAPITÃO AMÉRICA</option>
+                <select name="" id="sel_lan" onchange="resposta3()" class="quiz_campo">
+                    <option value="#">- Selecione uma opção -</option>
+                    <option value="1">Alan Scott</option>
+                    <option value="2">Hal Jordan</option>
+                    <option value="3">Guy Gardner</option>
                 </select><br>
-                <div id="teste"></div>
+                <div id="resposta_3"></div>
 
-                <h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
+                <h2>Inteligência artificial criada acidentalmente por Tony Stark.</h2>
 
-                <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
-                    <option value="superman">SUPERMAN</option>
-                    <option value="shazam">SHAZAM</option>
-                    <option value="capitao_america">CAPITÃO AMÉRICA</option>
+                <select name="" id="sel_iron" onchange="resposta4()" class="quiz_campo">
+                    <option value="#">- Selecione uma opção -</option>
+                    <option value="1">Mark III</option>
+                    <option value="2">J.A.R.V.I.S</option>
+                    <option value="3">Ultron</option>
                 </select><br>
-                <div id="teste"></div-->
+                <div id="resposta_4"></div>
 
-                <h3>RANK DE HEROIS</h3>
+                <h2>Qual nome do Machado que Thor usou em Wakanda?</h2>
+
+                <select name="" id="sel_thor" onchange="resposta5()" class="quiz_campo">
+                    <option value="#">- Selecione uma opção -</option>
+                    <option value="1">Mjolnir</option>
+                    <option value="2">Stormbreaker</option>
+                    <option value="3">Leviatã</option>
+                </select><br>
+                <div id="resposta_5"></div>
+
+                <h2>Nome do atual Bezouro Azul</h2>
+
+                <select name="" id="sel_b_a" onchange="resposta6()" class="quiz_campo">
+                    <option value="#">- Selecione uma opção -</option>
+                    <option value="1">Dan Garret</option>
+                    <option value="2">Ted Kord</option>
+                    <option value="3">Jaime Reyes</option>
+                </select><br>
+                <div id="resposta_6"></div>
+
+                <!--h3>RANK DE HEROIS</h3>
                 <input type="text" id="in_heroi" class="quiz_campo"><br><br>
                 <button onclick="registrar()">Montar Pódio</button><br><br>
                 <button onclick="mostrar()">Classificação</button> <br><br>
 
-                <div id="resultado"></div>
+                <div id="resultado"></div-->
                 <!--img src="../assets/imgs/shazam-p.jpg" alt="" class="img-quiz">
                 <img src="../assets/imgs/tho2.jpg" alt="" class="img-quiz">
                 <img src="../assets/imgs/marte-marte.jpg" alt="" class="img-quiz"-->
@@ -319,14 +341,14 @@
     function resposta() {
         var resposta = sel_heroi.value
         if (resposta == 'shazam') {
-            teste.innerHTML = `
+            resposta.innerHTML = `
             Resposta Correta <br>
             <img src="../assets/imgs/shazam.jpg" style="width:150px"/>`
         } else if(resposta == '#'){
-            teste.innerHTML = ' '
+            resposta.innerHTML = ' '
         }
         else{
-            teste.innerHTML = `Resposta Incorreta<br> 
+            resposta.innerHTML = `Resposta Incorreta<br> 
             <img src="../assets/imgs/x.png" style="width:250px"/>`
         }
     }
@@ -334,11 +356,74 @@
     function resposta2() {
         var resposta = sel_veloc.value
         if (resposta == 2) {
-            teste2.innerHTML = `
+            resposta_2.innerHTML = `
             Resposta Correta <br>
             <img src="../assets/imgs/wally.jpg" style="width:150px"/>`
-        } else {
-            teste2.innerHTML = `Resposta Incorreta<br> 
+        } else if(resposta == '#'){
+            resposta_2.innerHTML = ' '
+        }
+         else{
+            resposta_2.innerHTML = `Resposta Incorreta<br> 
+            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        }
+    }
+
+    function resposta3() {
+        var resposta = sel_lan.value
+        if (resposta == 1) {
+            resposta_3.innerHTML = `
+            Resposta Correta <br>
+            <img src="../assets/imgs/lanterna.jpg" style="width:150px"/>`
+        } else if(resposta == '#'){
+            resposta_3.innerHTML = ' '
+        }
+        else {
+            resposta_3.innerHTML = `Resposta Incorreta<br> 
+            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        }
+    }
+
+    function resposta4() {
+        var resposta = sel_iron.value
+        if (resposta == 3) {
+            resposta_4.innerHTML = `
+            Resposta Correta <br>
+            <img src="../assets/imgs/ultron.jpg" style="width:150px"/>`
+        } else if(resposta == '#'){
+            resposta_4.innerHTML = ' '
+        }
+        else {
+            resposta_4.innerHTML = `Resposta Incorreta<br> 
+            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        }
+    }
+
+    function resposta5() {
+        var resposta = sel_thor.value
+        if (resposta == 2) {
+            resposta_5.innerHTML = `
+            Resposta Correta <br>
+            <img src="../assets/imgs/machado.jpg" style="width:150px"/>`
+        } else if(resposta == '#'){
+            resposta_5.innerHTML = ' '
+        }
+        else {
+            resposta_5.innerHTML = `Resposta Incorreta<br> 
+            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        }
+    }
+
+    function resposta6() {
+        var resposta = sel_b_a.value
+        if (resposta == 3) {
+            resposta_6.innerHTML = `
+            Resposta Correta <br>
+            <img src="../assets/imgs/jaime.jpg" style="width:150px"/>`
+        } else if(resposta == '#'){
+            resposta_6.innerHTML = ' '
+        }
+        else {
+            resposta_6.innerHTML = `Resposta Incorreta<br> 
             <img src="../assets/imgs/x.png" style="width:250px"/>`
         }
     }
