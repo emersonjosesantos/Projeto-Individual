@@ -7,6 +7,7 @@ body {
 
 .dash-right .avisos {
   width: 100%;
+  height: 100%px;
   /* border: 3px solid pink; */
   color: black;
   font-family: "Exo 2", sans-serif;
@@ -114,7 +115,7 @@ body {
   width: 75%;
   position: relative;
   left: 25%;
-  background-color: #ffffff;
+  background-color: silver;
 
   /* width: 75%;
     display: flex;
@@ -214,9 +215,13 @@ body {
   /* background-color: #c7c7c7; */
 }
 
-.img-dash {
+.quiz-dash {
   align-items: center;
   text-align: center;
+}
+
+.topic{
+  margin-top: 8%;
 }
 
 .btns-dash {
@@ -258,7 +263,10 @@ color: #ffffff;
 }
 
 .graph {
-  width: 80%;
+  background-color: #ffffff;
+  align-self: center;
+  width: 3030px;
+  height: 615px;
   margin: auto;
   padding-top: 10px;
 }

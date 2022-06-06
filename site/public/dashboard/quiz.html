@@ -23,7 +23,7 @@
 
 </head>
 
-<body ><!--onload="validarSessao(), atualizarFeed()"-->
+<body onload="validarSessao(), atualizarFeed()">
 
     <div class="janela">
         <div class="header-left">
@@ -58,66 +58,79 @@
         </div>
 
         <div class="dash">
-            <div class="img-dash">
-                <h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
+            <div class="quiz-dash">
 
-                <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="superman">SuperMan</option>
-                    <option value="shazam">Shazam</option>
-                    <option value="capitao_america">Capitão América</option>
-                </select><br>
-                <div id="resposta"></div>
+                <div class="topic">
+                    <h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
 
-                <h2>Qual desses velocistas possuí o maior feito de velocidade?</h2>
+                    <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">SuperMan</option>
+                        <option value="2">Shazam</option>
+                        <option value="3">Capitão América</option>
+                    </select><br>
+                    <div id="resposta1"></div>
+                </div>
 
-                <select name="" id="sel_veloc" onchange="resposta2()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="1">Barry Allen</option>
-                    <option value="2">Wally West</option>
-                    <option value="3">Jay Garrick</option>
-                </select><br>
-                <div id="resposta_2"></div>
+                <div class="topic">
+                    <h2>Qual desses velocistas possuí o maior feito de velocidade?</h2>
 
-                <h2>Primeiro Laterna Verde Canônico da Terra.</h2>
+                    <select name="" id="sel_veloc" onchange="resposta2()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">Barry Allen</option>
+                        <option value="2">Wally West</option>
+                        <option value="3">Jay Garrick</option>
+                    </select><br>
+                    <div id="resposta_2"></div>
+                </div>
 
-                <select name="" id="sel_lan" onchange="resposta3()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="1">Alan Scott</option>
-                    <option value="2">Hal Jordan</option>
-                    <option value="3">Guy Gardner</option>
-                </select><br>
-                <div id="resposta_3"></div>
+                <div class="topic">
+                    <h2>Primeiro Laterna Verde Canônico da Terra.</h2>
 
-                <h2>Inteligência artificial criada acidentalmente por Tony Stark.</h2>
+                    <select name="" id="sel_lan" onchange="resposta3()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">Alan Scott</option>
+                        <option value="2">Hal Jordan</option>
+                        <option value="3">Guy Gardner</option>
+                    </select><br>
+                    <div id="resposta_3"></div>
+                </div>
 
-                <select name="" id="sel_iron" onchange="resposta4()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="1">Mark III</option>
-                    <option value="2">J.A.R.V.I.S</option>
-                    <option value="3">Ultron</option>
-                </select><br>
-                <div id="resposta_4"></div>
+                <div class="topic">
+                    <h2>Inteligência artificial criada acidentalmente por Tony Stark.</h2>
 
-                <h2>Qual nome do Machado que Thor usou em Wakanda?</h2>
+                    <select name="" id="sel_iron" onchange="resposta4()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">Mark III</option>
+                        <option value="2">J.A.R.V.I.S</option>
+                        <option value="3">Ultron</option>
+                    </select><br>
+                    <div id="resposta_4"></div>
+                </div>
 
-                <select name="" id="sel_thor" onchange="resposta5()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="1">Mjolnir</option>
-                    <option value="2">Stormbreaker</option>
-                    <option value="3">Leviatã</option>
-                </select><br>
-                <div id="resposta_5"></div>
+                <div class="topic"> 
+                    <h2>Qual nome do Machado que Thor usou em Wakanda?</h2>
 
-                <h2>Nome do atual Bezouro Azul</h2>
+                    <select name="" id="sel_thor" onchange="resposta5()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">Mjolnir</option>
+                        <option value="2">Stormbreaker</option>
+                        <option value="3">Leviatã</option>
+                    </select><br>
+                    <div id="resposta_5"></div>
+                </div>
 
-                <select name="" id="sel_b_a" onchange="resposta6()" class="quiz_campo">
-                    <option value="#">- Selecione uma opção -</option>
-                    <option value="1">Dan Garret</option>
-                    <option value="2">Ted Kord</option>
-                    <option value="3">Jaime Reyes</option>
-                </select><br>
-                <div id="resposta_6"></div>
+                <div class="topic">
+                    <h2>Nome do atual Bezouro Azul</h2>
+
+                    <select name="" id="sel_b_a" onchange="resposta6()" class="quiz_campo">
+                        <option value="#">- Selecione uma opção -</option>
+                        <option value="1">Dan Garret</option>
+                        <option value="2">Ted Kord</option>
+                        <option value="3">Jaime Reyes</option>
+                    </select><br>
+                    <div id="resposta_6"></div>
+                </div>
 
                 <!--h3>RANK DE HEROIS</h3>
                 <input type="text" id="in_heroi" class="quiz_campo"><br><br>
@@ -132,20 +145,18 @@
 
             <!-- <div class="btns-dash"> -->
 
-                <!--input placeholder="Sua Resposta" id="in_shazam">
+            <!--input placeholder="Sua Resposta" id="in_shazam">
                 <button onclick="resposta()" class="pesq">Ver</button>
                 <button id="superman" onclick="" class="pesq">Thor</button>
                 <button id="m_marav" onclick="" class="pesq">Caçador Marciano</button-->
 
-                
-
-                <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  
+            <!-- O gráfico é chamado de acordo com o id (fk_aquario) do banco  
                 <button class="btn-chart btn-pink" onclick="obterDadosGrafico(1)">Aquario 1</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(2)">Aquario 2</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(3)">Aquario 3</button>
                 <button class="btn-chart btn-white" onclick="obterDadosGrafico(4)">Aquario 4</button-->
-             </div> 
-            <!--div>
+        </div>
+        <!--div>
                 <h3 class="tituloGraficos">
                     <span id="tituloAquario">123</span>
                 </h3>
@@ -153,7 +164,7 @@
             <div class="graph">
                 <canvas id="canvas_grafico"></canvas>
             </div-->
-        </div>
+    </div>
     </div>
 
 </body>
@@ -337,19 +348,18 @@
    
 </script-->
 <script>
-     var heroi = []
+    var heroi = []
+
     function resposta() {
         var resposta = sel_heroi.value
-        if (resposta == 'shazam') {
-            resposta.innerHTML = `
-            Resposta Correta <br>
+        if (resposta == 2) {
+            resposta1.innerHTML = `
+            <br><br><b style="color: green;">Resposta Correta!</b> <br><br>
             <img src="../assets/imgs/shazam.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
-            resposta.innerHTML = ' '
-        }
-        else{
-            resposta.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else if (resposta == '#') {
+            resposta1.innerHTML = ' '
+        } else {
+            resposta1.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 
@@ -357,14 +367,12 @@
         var resposta = sel_veloc.value
         if (resposta == 2) {
             resposta_2.innerHTML = `
-            Resposta Correta <br>
+            <br><br><b style="color: green;">Resposta Correta!</b><br><br>
             <img src="../assets/imgs/wally.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
+        } else if (resposta == '#') {
             resposta_2.innerHTML = ' '
-        }
-         else{
-            resposta_2.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else {
+            resposta_2.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 
@@ -372,14 +380,12 @@
         var resposta = sel_lan.value
         if (resposta == 1) {
             resposta_3.innerHTML = `
-            Resposta Correta <br>
+            <br><br><b style="color: green;">Resposta Correta!</b><br><br>
             <img src="../assets/imgs/lanterna.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
+        } else if (resposta == '#') {
             resposta_3.innerHTML = ' '
-        }
-        else {
-            resposta_3.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else {
+            resposta_3.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 
@@ -387,14 +393,12 @@
         var resposta = sel_iron.value
         if (resposta == 3) {
             resposta_4.innerHTML = `
-            Resposta Correta <br>
+            <br><br><b style="color: green;">Resposta Correta!</b><br><br>
             <img src="../assets/imgs/ultron.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
+        } else if (resposta == '#') {
             resposta_4.innerHTML = ' '
-        }
-        else {
-            resposta_4.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else {
+            resposta_4.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 
@@ -402,14 +406,12 @@
         var resposta = sel_thor.value
         if (resposta == 2) {
             resposta_5.innerHTML = `
-            Resposta Correta <br>
+            <br><br><b style="color: green;">Resposta Correta!</b><br><br>
             <img src="../assets/imgs/machado.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
+        } else if (resposta == '#') {
             resposta_5.innerHTML = ' '
-        }
-        else {
-            resposta_5.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else {
+            resposta_5.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 
@@ -417,14 +419,12 @@
         var resposta = sel_b_a.value
         if (resposta == 3) {
             resposta_6.innerHTML = `
-            Resposta Correta <br>
+            <br><br><b style="color: green;">Resposta Correta!</b><br><br>
             <img src="../assets/imgs/jaime.jpg" style="width:150px"/>`
-        } else if(resposta == '#'){
+        } else if (resposta == '#') {
             resposta_6.innerHTML = ' '
-        }
-        else {
-            resposta_6.innerHTML = `Resposta Incorreta<br> 
-            <img src="../assets/imgs/x.png" style="width:250px"/>`
+        } else {
+            resposta_6.innerHTML = `<br><br><b style="color: red;">Resposta Incorreta!</b>`
         }
     }
 

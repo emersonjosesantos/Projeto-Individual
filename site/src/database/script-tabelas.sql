@@ -6,6 +6,11 @@ CREATE DATABASE ponto_nerd;
 
 USE ponto_nerd;
 
+CREATE TABLE personagem (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(50)
+	);
+
 CREATE TABLE usuario (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome VARCHAR(50),
@@ -23,11 +28,6 @@ CREATE TABLE aviso (
 	fk_usuario INT,
 	FOREIGN KEY (fk_usuario) REFERENCES usuario(id)
 );
-
-CREATE TABLE personagem (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	nome VARCHAR(50)
-	);
 
 	select * from usuario;
     select * from personagem;
