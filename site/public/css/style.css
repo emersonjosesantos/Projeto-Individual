@@ -300,7 +300,7 @@ input {
   display: flex;
   width: 75%;
   height: fit-content;
-  background-color: #ffffff;
+  background-color: silver;
   position: relative;
   top: 0;
   left: 25%;
@@ -375,6 +375,7 @@ input {
   font-weight: bold;
   color: black;
   background: #fff;
+  display: flex;
 
 }
 

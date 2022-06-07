@@ -111,18 +111,10 @@ body {
 }
 
 .dash {
-
   width: 75%;
   position: relative;
   left: 25%;
   background-color: silver;
-
-  /* width: 75%;
-    display: flex;
-    background-color: #161618;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;*/
   height: 100%;
 }
 
@@ -134,25 +126,6 @@ body {
   margin-top: 30px;
 }
 
-.perigo-frio {
-  background-color: #5c6bc0;
-}
-
-.perigo-quente {
-  background-color: #ff7043;
-}
-
-.alerta-frio {
-  background-color: #42a5f5;
-}
-
-.alerta-quente {
-  background-color: #ffee58;
-}
-
-.ideal {
-  background-color: #9ccc65;
-}
 
 .item-regua {
   padding: 5px;
@@ -220,7 +193,7 @@ body {
   text-align: center;
 }
 
-.topic{
+.topic {
   margin-top: 8%;
 }
 
@@ -235,20 +208,11 @@ body {
   gap: 43%;
 }
 
-.img-quiz {
-  float: left;
-  margin-left: 55px;
-  padding: 10px 10px;
-  display: flex;
-  width: 250px;
-  height: 300px;
-}
-
-.quiz_campo{
+.quiz_campo {
   width: 400px;
-background-color: #000000;
-border-radius: 4px;
-color: #ffffff;
+  background-color: #000000;
+  border-radius: 4px;
+  color: #ffffff;
 }
 
 .pesq {
@@ -263,7 +227,7 @@ color: #ffffff;
 }
 
 .graph {
-  background-color: #ffffff;
+  background-color: silver;
   align-self: center;
   width: 3030px;
   height: 615px;
@@ -287,4 +251,26 @@ color: #ffffff;
   background-color: white;
   margin: 5px;
   border-radius: 3px;
+}
+
+.media {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-left: 20%;
+  position: relative;
+  background-color: silver;
+}
+
+.rank{
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.rank:hover{
+  background-color: white;
+  color: #000000;
+  font-weight: bold;
 }
