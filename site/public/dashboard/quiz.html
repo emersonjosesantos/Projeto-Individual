@@ -34,10 +34,6 @@
             </div>
 
             <div class="btn-nav-white">
-                <a href="podio.html"><h3>Pódio</h3></a>
-            </div>
-
-            <div class="btn-nav-white">
                 <a href="./dashboard.html">
                     <h3>Gráficos da Interação Com Usuário</h3>
                 </a>
@@ -62,6 +58,17 @@
         </div>
 
         <div class="dash">
+            <button onclick="bonus()" class="bonus">Bônus</button>
+                <div class="popup-wrapper">
+                    <div class="popup">
+
+                        <div class="popup-close">x</div>
+                        <div class="popup-content">
+                            <p>Monte seu pódio de Heróis e Faça o teste de seus conhecimentos matemáticos!</p>
+                            <a class="popup-link" href="podio.html">Ir para página Bônus</a>
+                        </div>
+                    </div>
+                </div>
             <div class="quiz-dash">
 
                 <div class="topic">
@@ -227,4 +234,25 @@
     }
 
    
+</script>
+<script>
+    function bonus(){
+        const button = document.querySelector('button')
+const popup = document.querySelector('.popup-wrapper')
+
+button.addEventListener('click' , () =>{
+    popup.style.display = 'block'
+})
+
+popup.addEventListener('click' , event =>{
+    const classNameOfClickedElement = event.target.classList[0]
+    const classNames = ['popup-close', 'popup-wrapper','popup-link'] 
+    const shouldClosePopup = classNames.some(className => 
+    className === classNameOfClickedElement)
+    
+    if(shouldClosePopup){
+        popup.style.display = 'none'  
+    }
+})
+    }
 </script>

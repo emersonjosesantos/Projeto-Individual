@@ -370,6 +370,10 @@ input {
   cursor: pointer;
 }
 
+.btn-logout:hover{
+  color: red;
+}
+
 /* pagina extra - sobre */
 .sobre {
   font-weight: bold;

@@ -226,6 +226,75 @@ body {
   color: #ffffff;
 }
 
+.bonus {
+  font-size: 20px;
+  float: right;
+  display: flex;
+  margin:auto;
+  width: 10%;
+  margin-bottom: 10%;
+  background: #000000;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2% 10%;
+}
+
+.bonus:hover{
+  background-color: #000000af;
+}
+
+.popup-wrapper {
+  display: none;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup {
+  font-family: arial;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  position: relative;
+
+}
+
+.popup a {
+  border-radius: 4px;
+  color: #6b6b6b;
+  cursor: pointer;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.popup-close {
+  height: 13%;
+  width: 10%;
+  background-color: transparent;
+  border-radius: 40px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.popup-close:hover{
+  background-color: red;
+  color: #ffffff;
+}
+
+
 .graph {
   background-color: silver;
   align-self: center;
@@ -274,3 +343,4 @@ body {
   color: #000000;
   font-weight: bold;
 }
+
