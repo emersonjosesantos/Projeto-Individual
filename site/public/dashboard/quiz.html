@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>.Nerd | Dashboards</title>
+    <title>.Nerd | Quiz</title>
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="dashboards.css">
@@ -24,6 +24,8 @@
 </head>
 
 <body onload="validarSessao(), atualizarFeed()">
+<!-- <body onload="validarSessao(), atualizarFeed()"> -->
+    <!--https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQt8yNufq2Jp9-D4BrCYYW5Y_jm8HXRE6NDczXQbTjV-5DMBS4o-->
 
     <div class="janela">
         <div class="header-left">
@@ -34,8 +36,14 @@
             </div>
 
             <div class="btn-nav-white">
-                <a href="../dashboard/dashboard.html">
-                    <h3>Gráficos da Interação Com Usuário</h3>
+                <a href="./curiosidades.html">
+                    <h3>Curiosidades</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="../dashboard/cards.html">
+                    <h3>Tela de Votação</h3>
                 </a>
             </div>
 
@@ -58,7 +66,7 @@
         </div>
 
         <div class="dash">
-            <button onclick="bonus()" class="bonus">Bônus</button>
+            <!-- <button onclick="bonus()" class="bonus">Bônus</button>
                 <div class="popup-wrapper">
                     <div class="popup">
 
@@ -68,10 +76,12 @@
                             <a class="popup-link" href="cards.html">Ir para página Bônus</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
+                
             <div class="quiz-dash">
 
                 <div class="topic">
+                    <h2 style="font-size: 40px;">Você realmente conhece o heróis? Descubra Agora?</h2><br><br>
                     <h2>Qual dos Heróis abaixo não é vulnerável a magia?</h2>
 
                     <select name="" id="sel_heroi" onchange="resposta()" class="quiz_campo">
@@ -141,7 +151,7 @@
                         <option value="3">Jaime Reyes</option>
                     </select><br>
                     <div id="resposta_6"></div>
-                </div>
+                </div> <br><br>
 
             </div>
 
@@ -160,7 +170,7 @@
         if (resposta == 2) {
             resposta1.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b> <br><br>
-            <img src="../assets/imgs/shazam.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/shazam.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta1.innerHTML = ' '
         } else {
@@ -173,7 +183,7 @@
         if (resposta == 2) {
             resposta_2.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b><br><br>
-            <img src="../assets/imgs/wally.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/wally.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta_2.innerHTML = ' '
         } else {
@@ -186,7 +196,7 @@
         if (resposta == 1) {
             resposta_3.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b><br><br>
-            <img src="../assets/imgs/lanterna.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/lanterna.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta_3.innerHTML = ' '
         } else {
@@ -199,7 +209,7 @@
         if (resposta == 3) {
             resposta_4.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b><br><br>
-            <img src="../assets/imgs/ultron.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/ultron.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta_4.innerHTML = ' '
         } else {
@@ -212,7 +222,7 @@
         if (resposta == 2) {
             resposta_5.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b><br><br>
-            <img src="../assets/imgs/machado.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/machado.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta_5.innerHTML = ' '
         } else {
@@ -225,7 +235,7 @@
         if (resposta == 3) {
             resposta_6.innerHTML = `
             <br><br><b style="color: green;">Resposta Correta!</b><br><br>
-            <img src="../assets/imgs/jaime.jpg" style="width:150px"/>`
+            <img src="../assets/imgs-new/jaime.jpg" style="width:150px"/>`
         } else if (resposta == '#') {
             resposta_6.innerHTML = ' '
         } else {

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="../assets/icon/dado-removebg-preview.png">
+    <link rel="shortcut icon" type="image/x-icon" sizes="512x512" href="../assets/icon/dado-removebg-preview.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.Nerd | Curiosidades</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="dashboards.css">
+    <script src="../js/funcoes.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    scripts do Chart.js
+    <script type="text/javascript" src="https://www.chartjs.org/dist/2.8.0/Chart.min.js"></script>
+
+</head>
+
+<body onload="validarSessao(), atualizacaoPeriodica()">
+    <!-- onload="validarSessao(), atualizarFeed()" -->
+
+    <div class="janela">
+        <div class="header-left">
+            <img src="../assets/icon/dado-removebg-preview.png" alt="logo">
+
+            <div class="hello">
+                <h3>Olá, <span id="b_usuario">usuário</span>!</h3>
+            </div>
+
+            <div class="btn-nav">
+
+                
+                    <h3>Curiosidades</h3>
+
+            </div>
+
+            <div class="btn-nav-white">
+
+                <a href="cards.html">
+                    <h3>Tela de Votação</h3>
+                </a>
+
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="quiz.html">
+                    <h3>Quiz</h3>
+                </a>
+            </div>
+
+            <div class="btn-nav-white">
+                <a href="./mural.html">
+                    <h3>Nota do Usuário</h3>
+                </a>
+            </div>
+
+            <div class="btn-logout" onclick="limparSessao()">
+                <h3>Sair</h3>
+            </div>
+
+        </div>
+
+        <div class="curios">
+            <div class="container3">
+                <div id="text-curios">
+                    <h2>Marvel e DC Comics sem dúvidas têm uma Ampla <br>
+                        gama de HQ's, filmes e séries que são sucessos inegavéis. <br>
+                        Pórem com tantos anos de história, <br>
+                        existem detalhes que escapam ao fãs. <br>
+                        Abaixo estão 30 curiosidades pra você que <br>
+                        não quer perder nada do mundo nerd. <br>
+                        Entenda referências e muito mais.</h2>
+
+                    <h2>20 Curiosidades sobre a Marvel que você não sabia:</h2>
+
+                    <p> 1 - Martin Goodman publicou a primeira história em quadrinhos da Marvel em 1939.</p>
+                    <p> 2 - A Marvel lançou 32.000 quadrinhos em 2009.</p>
+                    <p> 3 - A Marvel produziu quadrinhos de romance de 1945-1965.</p>
+                    <p>4 - Originalmente, o Capitão América foi criado como uma peça de propaganda
+                        para o exército dos EUA durante a Segunda Guerra Mundial.</p>
+                    <p>5 - Em momentos distintos no tempo, todos os cinco membros originais dos Vingadores renunciaram.</p>
+                    <p>6 - Pantera Negra foi o primeiro membro afro-americano dos vingadores.</p>
+                    <p>7 - Charles Xavier ganhou e perdeu a capacidade de andar várias vezes.</p>
+                    <p>8 - Existe uma versão japonesa do Homem-Aranha que ganhou seus poderes de alienígenas.</p>
+                    <p>9 - A primeira HQ da Marvel publicado foi The Human Torch.</p>
+                    <p>10 - O Capitão América não foi um membro fundador dos Vingadores.</p>
+                    <p>11 - Deadpool é um membro dos Vingadores.</p>
+                    <p>12 - A Marvel já teve a licença para Transformers, Zoids e Doctor Who.</p>
+                    <p>13 - The Scarlet Witch criou uma realidade alternativa onde ela e Vision tiveram filhos.</p>
+                    <p>14 - A Marvel quase comprou a DC.</p>
+                    <p>15 - A SHIELD iniciou suas operações no antigo Egito.</p>
+                    <p>16 - Um personagem chamado Jihad foi apresentado onze dias antes do ataque de 11 de setembro.</p>
+                    <p>17 - Existe um sapo com os poderes de Thor.</p>
+                    <p>18 - Dr. Doom brevemente desempenhou o papel de Homem de Ferro.</p>
+                    <p>19 - A edição 118 dos X-Men tinha a palavra 'sexo' escondida em todo o conteúdo da história em
+                        quadrinhos.</p>
+                    <p>20 - Michael Jackson uma vez tentou comprar a Marvel Comics.</p>
+                    <p>21 - O universo Marvel possui uma unidade de manutenção.</p>
+                    <p>22 - A aparência de Samuel L. Jackson foi usada como referência de design para o personagem Nick Fury.
+                    </p><br><br>
+
+                    <h2>10 Curiosidades sobre a Liga da justiça:</h2>
+
+                    <h3> 1 - A Liga da Justiça tinha apenas sete integrantes. </h3>
+                        <p>Originalmente a liga da justiça tinha apenas sete integrantes, Batman, Superman, <br>
+                        Mulher Maravilha, The Flash, Aquaman, Lanterna Verde e o Caçador de Marte.</p>
+
+                    <h3> 2 - Batman usava armas. </h3>
+                        <p>Originalmente o herói era um vigilante armado, que não só ativara em seus inimigos, <br>
+                        mas também foi encontrado jogando-os em banheiras de ácido, quebrando o pescoço com chute rápido <br> 
+                        e pendurando-os no Batplane.</p>
+
+                    <h3> 3 - Superman já foi morto nos quadrinhos. </h3>
+                        <p>Mesmo sendo conhecido como o “Homem de Aço” o personagem realmente foi morto em uma história <br>
+                        dos quadrinhos de 1993 pelo vilão “Doomsday”. Mais tarde o herói foi trazido de volta a vida por <br>
+                        meio da energia do sol.</p>
+
+                    <h3>4 -  Mulher Maravilha conquistou o mundo. <h3>
+                        <p>Quando a personagem chegou pela primeira vez nos quadrinhos (Na All-Star comics #8 1941) <br>
+                        ela imediatamente conquistou o mundo. Todo o mundo adora a Mulher Maravilha, <br>
+                        ela se tornou um dos primeiros super-heróis a obter seu próprio quadrinho em 1942.</p>
+
+                    <h3>5 - Flash é mais rápido que o Superman. </h3>
+                        <p>Embora o Homem de Aço seja aprimorado e alimentado pelo sol, ele ainda precisa seguir as leis <br>
+                        da física, incluindo o atrito. Flash no entanto é alimentado pela quase “Mágica” <br>
+                        força da velocidade, que lhe permite atingir velocidades que nenhuma outra pessoa consegue.</p>
+
+                    <h3>6 - Aquaman é o Rei dos Mares. </h3>
+                       <p>O personagem respira debaixo d’água, nada em alta velocidade, e pode se comunicar com <br>
+                        a vida marinha telepaticamente. Ele é capaz de suportar a pressão das profundezas do oceano, <br>
+                        enquanto na terra ele tem força sobre-humana sentidos elevados e pele quase impenetrável.</p>
+
+                    <h3>7 - Personagem gay foi imaginado para trazer mais diversidade ao universo DC. </h3>
+                        <p>Em 2011, o universo DC teve ume reinicialização chamada The New 52, onde o Lanterna Verde <br>
+                        foi imaginado como um personagem gay para trazer mais diversidade para o universo da DC.</p>
+
+                    <h3>8 - Caçador de Marte é um metamorfo. </h3>
+                        <p>O personagem é um metamorfo, o que significa que ele pode se transformar em qualquer humano, <br>
+                        extraterreste, ou tetrápode que ele desejar.</p>
+
+                    <h3>9 - Liga da Justiça não foi primeiro grupo de heróis da DC. <h3>
+                       <p> A liga da justiça não foi a primeira equipe de super-heróis da história da  DC Comics. <br>
+                        O título de primeiro grupo pertence a Justice Society of América.</p>
+
+                    <h3>10 - Crossover DC/Marvel. <h3>
+                        <p>A liga da justiça lutou ao lados dos Vingadores em um crossover dos dois universos em 2003. <br>
+                        No início dos anos de 1980, as duas empresas haviam conversado sobre a realização de <br>
+                        um crossover com seus melhores esquadrões, mas o projeto foi arquivado devido a conflitos <br>
+                        e disputas editoriais. O enredo do crossover foi derrotar o vilão que viaja no tempo do universo <br>
+                        “DC Krona” e se transportou para o universo Marvel para encontrar a verdade da criação.</p>
+                    
+                        <h2>Bônus:</h2>
+
+                        <h3>Calcule a periculosidade de Heróis</h3>
+                            
+                        <p>Regras: <br><br> 
+                            Classificação de 0 a infinito, podem ser cadastrados infinitos heróis <br><br>
+                        Só podem ser inserido poder a partir de 500; <br><br>
+                        Classificação a partir de 1000 = Forte; <br>
+                        Classificação a partir de 5000 = Poderoso; <br>
+                        Classificação a partir de 6000 = Raro; <br>
+                        Classificação a partir de 7000 = Mega; <br>
+                        Classificação a partir de 8000 = Divino.</p> <br>
+
+                        <p>Boa sorte!</p>
+                </div>
+                <div class="img-curios">
+
+                </div>
+
+                <center>
+                <div class="img-dash">
+
+                    <h2>Calcular agora</h2>
+                    <input id="in_nome" placeholder="Nome do Herói" class="quiz_campo"><br><br>
+                    <input id="in_poder" placeholder="Poder de luta" class="quiz_campo"><br><br>
+                    <input id="in_class" placeholder="Classificação" class="quiz_campo"><br><br>
+
+                    <button onclick="cadastrar()" class="quiz_campo" style="width: 100px;">Registrar Herói</button><br><br>
+                    <button onclick="listar()" class="quiz_campo" style="width: 100px;">Listar</button><br><br>
+                    <button onclick="zerar()" class="quiz_campo" style="width: 100px;">Zerar</button><br><br>
+
+
+                    <div id="resultado"></div>
+
+                </div>
+                </center>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var herois = []
+
+
+    function cadastrar() {
+        var nome = in_nome.value
+        var poder = Number(in_poder.value)
+        var classificacao = Number(in_class.value)
+
+        if (poder < 500 || classificacao < 0) {
+
+            return alert("Fraco Demais!")
+        }
+
+        herois.push({
+            nome: nome,
+            poder: poder,
+            classificacao: classificacao
+        })
+
+    }
+
+    function listar() {
+
+        var heroi_result = {
+            el_class: "",
+            foto: ""
+        }
+
+
+        for (var i = 0; i < herois.length; i++) {
+
+            if (herois[i].classificacao > 8000 && herois[i].classificacao >= 10000) {
+                heroi_result.el_class = "Divindade"
+                heroi_result.foto = `../assets/imgs-new/coroa.png`
+            }
+
+            else if (herois[i].classificacao > 7000 && herois[i].classificacao <= 8000) {
+                heroi_result.el_class = "Mega"
+                heroi_result.foto = `../assets/imgs-new/asas.png`
+            }
+            else if (herois[i].classificacao > 6000 && herois[i].classificacao <= 7000) {
+                heroi_result.el_class = "Raro"
+                heroi_result.foto = `../assets/imgs-new/espada.png`
+            }
+            else if (herois[i].classificacao > 5000 && herois[i].classificacao <= 6000) {
+                heroi_result.el_class = "Poderoso"
+                heroi_result.foto = `../assets/imgs-new/muque.png`
+            }
+            else if (herois[i].classificacao >= 1000 && herois[i].classificacao <= 5000) {
+                heroi_result.el_class = "Forte"
+                heroi_result.foto = `../assets/imgs-new/punho.png`
+            }
+
+
+            resultado.innerHTML += `
+        Herói ${i + 1}: <b>${herois[i].nome}</b><br>
+        
+        Classificação: <b>${heroi_result.el_class}</b><br>
+        
+        Poder: <b>${herois[i].poder}</b><br>
+        
+        Nível <b>${herois[i].poder * herois[i].classificacao}</b> de periculosidade!<br>
+        
+        <img src="${heroi_result.foto}" style="height:100px"><br><br>`
+        }
+
+    }
+
+    function zerar(){
+        resultado.innerHTML = " "
+    }
+</script>
